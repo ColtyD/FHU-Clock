@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Starter Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald:400,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <link rel="stylesheet" type="text/css" href="css3clock.css" />
+    
+    
+    
+</head>
+
+<body>
+
+        <div class="container" id="color">
+            
+           <div class="alert alert-danger" role="alert" id="lionAlert" style="display: block">
+                
+             <!--       <img src="imgs/Alert.png" id="alertImg" style="display: block">   -->
+                
+                <div class="rightAlert col-lg-12">
+                    <div class="alertText" >
+                         <div class="row col-lg-12">
+                            <img src="imgs/Alert.png" id="alertImg" class="col-lg-2" style="display: block">
+                            <h1 class="col-lg-8"> Title </h1> 
+                            <img src="imgs/Alert.png" id="alertImg2" class="col-lg-2" style="display: block">
+                        </div>
+                        <h2> This is the alert Text!!!!! </h2>
+                    </div>
+                </div>
+                
+            </div>   
+            
+            <div class="leftSide col-lg-6">
+                
+      <!--          <div class="barBlock"></div> -->
+                <div class="scheduleBar"></div>
+                
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+                <script type="text/javascript">
+
+                /***********************************************
+                * CSS3 Analog Clock- by JavaScript Kit (www.javascriptkit.com)
+                * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+                ***********************************************/
+
+                var $hands = $('#liveclock div.hand')
+
+                window.requestAnimationFrame = window.requestAnimationFrame
+                                               || window.mozRequestAnimationFrame
+                                               || window.webkitRequestAnimationFrame
+                                               || window.msRequestAnimationFrame
+                                               || function(f){setTimeout(f, 60)}
+
+
+                function updateclock(){
+                    var curdate = new Date()
+                    var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
+                    var minute_as_degree = curdate.getMinutes() / 60 * 360
+                    var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
+                    $hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
+                    $hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
+                    $hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
+                    requestAnimationFrame(updateclock)
+                }
+
+                requestAnimationFrame(updateclock)
+
+
+                </script><div id="liveclock" class="outer_face">
+
+                <div class="marker oneseven"></div>
+                <div class="marker twoeight"></div>
+                <div class="marker fourten"></div>
+                <div class="marker fiveeleven"></div>
+
+                <div class="inner_face">
+                <div class="hand hour"></div>
+                <div class="hand minute"></div>
+                <div class="hand second"></div>
+                </div>
+
+                </div>
+
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+                <script type="text/javascript">
+
+                /***********************************************
+                * CSS3 Analog Clock- by JavaScript Kit (www.javascriptkit.com)
+                * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+                ***********************************************/
+
+                var $hands = $('#liveclock div.hand')
+
+                window.requestAnimationFrame = window.requestAnimationFrame
+                                               || window.mozRequestAnimationFrame
+                                               || window.webkitRequestAnimationFrame
+                                               || window.msRequestAnimationFrame
+                                               || function(f){setTimeout(f, 60)}
+
+
+                function updateclock(){
+                    var curdate = new Date()
+                    var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
+                    var minute_as_degree = curdate.getMinutes() / 60 * 360
+                    var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
+                    $hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
+                    $hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
+                    $hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
+                    requestAnimationFrame(updateclock)
+                }
+
+                requestAnimationFrame(updateclock)
+
+
+                </script>
+            
+            </div>
+             
+            <div class="rightSide col-lg-6">
+    
+            
+                <div class="dateBlock">
+                    <div class="date">
+                        <p id="demo">Date Here:</p>
+                    </div>
+                    <div class="numberDate">
+                        <p id="numberDate"></p>
+                    </div>
+                </div>
+                
+    <!-- Dial back the amount of text on the schedule screen -->
+                <div id="scheduleBlock">
+                
+                    <div class="Event1">
+                        <div class="Welcome"><p>Welcome</p></div>
+                        <div class="eventText"> <p> CIS 441 </p> </div>
+                    </div>
+                 
+                </div>
+                
+                <div id="weatherBlock">
+                
+                    <div id="weatherIcon"></div>
+                    <div id="currentTemp"></div>
+                    
+                
+                </div>
+                
+                <div id="alertBlock">
+                
+                        <div class="alertIcon"></div>
+                
+                </div>
+             
+            </div>
+            
+            
+        </div>
+        
+
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+
+    
+    
+</body>
+
+</html>
+
+
+<!-- Notes!
+
+ Make a backgorund gradient for: morning, day, night? Done
+
+-->

@@ -1,0 +1,158 @@
+.container{
+    min-width: 1920px;
+    min-height: 1080px;
+    max-height: 1080px;
+    max-width:1920px;
+    font-family:'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.date{
+    width: 90%;
+    margin:0px auto -25px auto;
+    text-align: center;
+    font-size: 200px; 
+    font-weight:700;
+   // background-color: black; 
+    
+}
+
+.dateBlock{
+    color:black; 
+}
+
+.numberDate{
+    width: 70%;
+     padding:px;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+font-weight: 800;
+  //  background-color: black; 
+}
+
+#scheduleBlock{
+    width: 80%;
+    margin: 0px auto;
+    height: 500px;
+    display:block;
+    margin-bottom: 50px; 
+}
+
+.Event1{
+    height:50%;
+    margin-top:100px;
+    text-align: center;
+}
+
+
+.eventText{
+    width:100%;
+    float:clear;
+    font-size: 150px;
+    color:#fff;
+    
+}
+
+.Welcome{
+        width:100%;
+    float:clear;
+    font-size: 150px;
+    color:#fff;
+}
+
+.Welcome p{
+      text-shadow: 5px 5px black, 5px 0px black;
+}
+
+.eventText p {
+    text-shadow: 5px 5px black, 5px 0px black;
+}
+
+
+#weatherBlock{
+    width: 80%;
+    margin:auto;
+    height: 620px;
+
+}
+
+#weatherIcon {
+    text-align: center;
+}
+
+#weatherIcon img{
+    height: 300px;
+    margin-top: 20px;
+}
+
+#currentTemp{
+    text-align: center;
+    font-size: 160px;
+    font-weight: 800; 
+    margin-top: 50px;
+    color: #fff;
+    text-shadow: 5px 5px black, 5px 0px black;
+}
+
+#alertBlock{
+    width: 80%;
+    margin:auto;
+}
+
+.alertImg {
+    width:20px;
+    margin: 60px auto;
+    float:left; 
+}
+
+.box{
+    width:100%;
+}
+
+.bottomAlert{
+    width:1000%;
+    height:150px;
+    margin-left:-15px;
+    background-color: black;
+    color:white;
+    font-size: 90px;
+    padding:10px;
+    float:left;
+    overflow: hidden;
+}
+
+.alert{
+       display:none;
+}
+
+
+.barBlock{
+     position:absolute;
+    height: 950px;
+    width: 950px;
+    margin-top: 100px;
+    background-color: magenta;
+    border-radius:100%;
+}
+
+#lionAlert{
+    height: 1080px; 
+}
+
+.leftAlert img{
+    width:90%;
+    margin:auto; 
+    margin-top: 70px;
+}
+
+.alertText h1{
+     text-align: center;
+    font-size: 200px;
+}
+
+.alertText h2 {
+    font-size: 120px;
+    color:black; 
+    font-family: 'Montserrat', sans-serif;
+}
